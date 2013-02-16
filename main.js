@@ -1,3 +1,5 @@
+var sqDim = 40;
+
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
@@ -13,9 +15,9 @@ canvas.addEventListener('touchmove', function(e) {
         var py = touch.pageY;
 
         ctx.beginPath();
-        ctx.arc(px, py, 30, 0, 2 * Math.PI, true);
 
         ctx.fillStyle = "#ffffff";
+        ctx.fillRect(px, py, sqDim, sqDim);
         ctx.fill();
         ctx.lineWidth = 5.0;
         ctx.strokeStyle = "#000000";
