@@ -14,14 +14,8 @@ canvas.addEventListener('touchmove', function(e) {
         var px = touch.pageX;
         var py = touch.pageY;
 
-        ctx.beginPath();
-
         ctx.fillStyle = "#ffffff";
         ctx.fillRect(px, py, sqDim, sqDim);
-        ctx.fill();
-        ctx.lineWidth = 5.0;
-        ctx.strokeStyle = "#000000";
-        ctx.stroke();
     }
 }, false);
 
