@@ -14,6 +14,8 @@ canvas.addEventListener('touchmove', function(e) {
         var px = touch.pageX;
         var py = touch.pageY;
 
+        console.log("???");
+
         ctx.fillStyle = "#ffffff";
         ctx.fillRect(px, py, sqDim, sqDim);
     }
