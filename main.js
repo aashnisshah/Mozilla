@@ -25,6 +25,7 @@ canvas.addEventListener('touchmove', function(e) {
     }
 }, false);
 
+/*
 canvas.addEventListener('touchmove', function(e) {
     for (var i = 0; i < e.touches.length; i++) {
         var touch = e.touches[i];
@@ -42,6 +43,8 @@ canvas.addEventListener('touchmove', function(e) {
         ctx.stroke();
     }
 });
+*/
+
 canvas.addEventListener('touchend', function () {
     ctx.clearRect(0, 0, 320, 450);
 }, false);
